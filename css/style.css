@@ -27,7 +27,7 @@ body {
   min-height: 100vh;
   font-family: "Roboto", sans-serif;
   font-size: max(1.35vw, 16px);
-  color: #025940;
+  color: #102A43;
   line-height: 1.5;
   text-rendering: optimizeSpeed;
   overflow-x: visible;
@@ -102,7 +102,7 @@ input, button, textarea, select {
    ========================================= */
 
 h1, h2, h3 {
-  font-family: "Piazzolla", serif;
+  font-family: "Proxima Nova", "Inter", serif;
   font-weight: 600;
 }
 
@@ -123,7 +123,7 @@ a {
   color: inherit;
   text-decoration: none;
   padding-bottom: 1px;
-  border-bottom: 1px solid #025940;
+  border-bottom: 1px solid #102A43;
   transition: all 0.3s ease-in-out;
 }
 
@@ -149,7 +149,7 @@ a {
 /* --- HEADER (Mobile) --- */
 header .container {
   padding: 15px;
-  background: #F2D1C9;
+  background: #E6F0F5;
   *zoom: 1;
 }
 header .container:before, header .container:after {
@@ -258,7 +258,7 @@ header .socials-container .social-links span {
 }
 header .socials-container .social-links span svg {
   width: 30px;
-  fill: #e97051;
+  fill: #102A43;
   transition: fill 0.3s ease;
 }
 /* Hover Effects */
@@ -282,7 +282,8 @@ header .socials-container .social-links:hover span svg {
   content: " ";
   position: absolute;
   top: 0; left: 0; bottom: 0; right: 0;
-  background: linear-gradient(100deg, #025940, #F26052);
+  /* background: linear-gradient(100deg, #025940, #F26052); */
+  background: linear-gradient(100deg, #0F2027, #203A43, #2C5364);
   z-index: 0;
 }
 #main .container {
@@ -297,8 +298,12 @@ header .socials-container .social-links:hover span svg {
   background-color: #fff;
   padding: max(3vw, 30px) 0;
 }
-main article { mix-blend-mode: screen; }
-main article h2 { margin-bottom: max(3vw, 30px); }
+main article {
+  mix-blend-mode: screen;
+}
+main article h2 {
+  margin-bottom: max(3vw, 30px);
+}
 main article section { border-bottom: 1px solid #000; }
 main article a { border-color: #000; }
 
@@ -339,7 +344,8 @@ main article blockquote {
   background: #fff;
   color: #000;
   line-height: 1.6;
-  transform: rotate(-1deg);
+  transform: rotate(-2deg);
+  border-radius: 15px;
 }
 main article blockquote p {
     margin: 0;
@@ -439,7 +445,7 @@ ol.gradient-list li::before {
   font-size: 50px;
   line-height: 0.8;
   margin-right: 20px;
-  background: linear-gradient(180deg, #EE85C8, #6366F1); 
+  background: linear-gradient(100deg, #0F2027, #203A43, #2C5364);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent; 
@@ -461,14 +467,18 @@ ol.gradient-list li span {
   border-radius: 6px; object-fit: cover; display: block;
 }
 .container .project-image img {
-  height: 20rem; width: 100%;
-  object-fit: cover; border-radius: 8px;
+  height: 25rem;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  object-position: top;
 }
+
 
 /* --- FOOTER --- */
 .page-footer {
   grid-column-start: span 6;
-  background-color: #80BF9B;
+  background-color: #587B9C;
   text-align: center;
   padding: 3vw;
   font-size: max(1.35vw, 18.5px);
@@ -488,13 +498,17 @@ ol.gradient-list li span {
 /* Profile Widget (Bottom/Side) */
 .profile { z-index: 2; font-size: 16px; }
 .profile .container {
-  background: #F26052; color: #fff;
+  background: #F26052;
+  color: #fff;
   padding: 0 30px 30px 30px;
-  line-height: 1.7; text-align: center;
+  line-height: 1.7;
+  text-align: center;
 }
 .profile .container #profile-title {
-  line-height: 40px; margin: 5px 0;
-  font-size: 18px; text-transform: uppercase;
+  line-height: 40px; 
+  margin: 5px 0;
+  font-size: 18px; 
+  text-transform: uppercase;
 }
 .profile:hover .container, .profile:focus-within .container { margin-bottom: 0%; }
 
@@ -562,7 +576,7 @@ ol.gradient-list li span {
 
   /* --- NAVIGATION (Rotated) --- */
   nav {
-    background: #f2d1c8;
+    background: #E6F0F5;
     padding-bottom: 220px; 
   }
   nav ul {
@@ -711,7 +725,8 @@ body.home-page header .socials-container .social-links {
     position: fixed; bottom: 0; right: 30px;
   }
   .profile .container {
-    background: #025940; text-align: left;
+    background: #102A43;
+    text-align: left;
     min-width: 250px;
     animation: jumping 1s;
     transition: ease all 0.4s;
@@ -727,9 +742,11 @@ body.home-page header .socials-container .social-links {
     font-size: 14px;
     border-bottom: 2px solid transparent;
     transition: all 0.3s ease;
+    color: #102A43;
   }
   .page-footer .back-to-top:hover {
-    border-bottom: 2px solid #025940;
+    border-bottom: 2px solid #F26052;
+    color: #F26052;
   }
 
 }
